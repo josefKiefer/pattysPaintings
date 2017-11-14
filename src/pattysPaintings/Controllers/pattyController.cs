@@ -8,6 +8,9 @@ namespace pattysPaintings.Controllers
 {
     public class pattyController : Controller
     {
-
+        public string Detail()
+        {
+            return "Hello from Patty Controller";
+        }
     }
 }
