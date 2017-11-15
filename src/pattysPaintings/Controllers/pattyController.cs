@@ -8,9 +8,14 @@ namespace pattysPaintings.Controllers
 {
     public class pattyController : Controller
     {
-        public string Detail()
+        public ActionResult Detail() //redirect and content result are inherited from ActionResult base class so can use for both returns below
         {
-            return "Hello from Patty Controller";
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday) 
+            {
+                return Redirect("/"); // if it's Tuesday then website is redirected to root of website (currently 404 error)
+            }
+            return Content("Hello from Patty Controller");
+            
         }
     }
 }
