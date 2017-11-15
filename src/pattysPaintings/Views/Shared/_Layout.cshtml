@@ -17,11 +17,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Patty's Paintings", "Index", "patty", new { area = "" }, new { @class = "navbar-brand" })
+                <!--vv Patty's Paintings in ActionLink appears in top right corner of every page-->
+                <!--Controller below was changed from Home to patty back to home-->
+                @Html.ActionLink("Patty's Paintings", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) <!--ActionLink can be used to generate a hyperlink-->
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <!-- Add menu items here -->
+                    <li>@Html.ActionLink("Gallery", "Detail2", "patty")</li>
+                    <li>@Html.ActionLink("About", "Index", "patty")</li>
+                    <li>@Html.ActionLink("Contact", "Index", "patty")</li>
                 </ul>
             </div>
         </div>
@@ -31,7 +36,7 @@
         @RenderBody() <!--render body method tells mvc where we want content from view-->
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Patty Paints</p>
+            <p>&copy; @DateTime.Now.Year - Chief Kiefer Productons</p>
         </footer>
     </div>
 

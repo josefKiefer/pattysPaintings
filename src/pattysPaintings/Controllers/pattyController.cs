@@ -8,6 +8,7 @@ namespace pattysPaintings.Controllers
 {
     public class pattyController : Controller
     {
+      
         public ActionResult Detail() //redirect and content result are inherited from ActionResult base class so can use for both returns below
         {
             ViewBag.PaintingTitle = "Spring Grand Lake"; //viewbag properties (not case sensitive
@@ -23,6 +24,14 @@ namespace pattysPaintings.Controllers
             //}
             //return Content("Hello from Patty Controller");
             
+        }
+        public ActionResult Detail2()
+        {
+            return View();
+        }
+        public ActionResult Outlined()
+        {
+            return View();
         }
     }
 }
