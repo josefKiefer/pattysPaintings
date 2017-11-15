@@ -10,6 +10,10 @@ namespace pattysPaintings.Controllers
     {
         public ActionResult Detail() //redirect and content result are inherited from ActionResult base class so can use for both returns below
         {
+            ViewBag.PaintingTitle = "Spring Grand Lake"; //viewbag properties (not case sensitive
+            ViewBag.Date = 2012;
+            ViewBag.Location = "Grank Lake, CO";
+
             return View();
 
 
