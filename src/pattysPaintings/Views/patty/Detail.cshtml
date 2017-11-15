@@ -1,5 +1,9 @@
 ﻿@{
     Layout = null;
+
+    var paintingTitle = "Spring Grand Lake";
+    var date = 2012;
+    var location = "Grank Lake, CO";
 }
 
 <!DOCTYPE html>
@@ -11,7 +15,11 @@
 </head>
 <body>
     <div>
-        <h1>Hello from Views/patty/Detail!</h1>
+        <h1>@paintingTitle</h1>
+        <h2>Date: @date</h2>
+
+        <h5>Location:</h5>
+        <div>@location</div>
     </div>
 </body>
 </html>
