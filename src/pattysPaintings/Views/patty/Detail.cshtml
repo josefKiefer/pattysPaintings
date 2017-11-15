@@ -1,22 +1,13 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Patty K Detail";
       
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>@ViewBag.paintingTitle</h1>
-        <h2>Date: @ViewBag.date</h2>
+<h1>@ViewBag.paintingTitle</h1>
+<h2>Date: @ViewBag.date</h2>
 
-        <h5>Location:</h5>
-        <div>@ViewBag.location</div>
-    </div>
-</body>
-</html>
+<h5>Location:</h5>
+<div>@ViewBag.location</div>
+    
