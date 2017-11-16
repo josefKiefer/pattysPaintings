@@ -1,46 +1,17 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Patricia Kiefer</title>
-    <link href="~/Content/site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script> 
+    <title>Patricia Kiefer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--vv Patty's Paintings in ActionLink appears in top right corner of every page-->
-                <!--Controller below was changed from Home to patty back to home-->
-                @Html.ActionLink("Patty's Paintings", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) <!--ActionLink can be used to generate a hyperlink-->
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Add menu items here -->
-                    <li>@Html.ActionLink("Gallery", "Detail2", "patty")</li>
-                    <li>@Html.ActionLink("About", "Index", "patty")</li>
-                    <li>@Html.ActionLink("Contact", "Index", "patty")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container body-content">
-        @RenderBody() <!--render body method tells mvc where we want content from view-->
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Chief Kiefer Productons</p>
-        </footer>
-    </div>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <h1>Patricia Kiefer</h1>
+    <p>Paintings made by Patricia Kiefer</p>
+   
 </body>
 </html>

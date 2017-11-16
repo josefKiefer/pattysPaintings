@@ -4,10 +4,42 @@
 @{ 
     ViewBag.Title = "Index";
 }
+    <div class="container text-center">
 
-<h2>Gallery</h2>
-
-<p>Hello from View Template</p>
-
-<img src="~/Images/buffsFlatIron.jpg" alt="Flattys inside Buff Outline" />
-<li>@Html.ActionLink("Outlined", "Outlined", "patty")</li>
+        <h2>Image Gallery</h2>
+        <p>The .thumbnail class can be used to display an image gallery.</p>
+        <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+        <p>Click on the images to enlarge them.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="~/Images/ColoradoMorning.jpg" target="_blank">
+                        <img src="~/Images/ColoradoMorning.jpg" class="img-circle" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <p>Nature Paintings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">                  
+                    <a href="~/Images/Abstracted_flower.jpg" target="_blank">
+                        <img src="~/Images/Abstracted_flower.jpg" class="img-circle" alt="Abstract" style="width:100%">
+                        <div class="caption">
+                            <p>Abstract Paintings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="~/Images/Love,Mommy.jpg" target="_blank">
+                        <img src="~/Images/Love,Mommy.jpg" class="img-circle" alt="Wild Life" style="width:100%">
+                        <div class="caption">
+                            <li>@Html.ActionLink("Outlined", "Outlined", "patty")</li>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
