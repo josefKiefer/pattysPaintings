@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css.css" />
     <Content Include="Content\site.css" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -211,6 +212,7 @@
     <Content Include="Views\patty\Detail2.cshtml" />
     <Content Include="Views\patty\Outlined.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\patty\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

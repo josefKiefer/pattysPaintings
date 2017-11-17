@@ -3,11 +3,24 @@
     ViewBag.Title = "Patty K Detail";
       
 }
-
-
-<h1>@ViewBag.paintingTitle</h1>
+<div class="container left-align"    
+    <div class="col-lg-6">
+        <h1 class="display-5">Contact:</h1>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="E-Mail Address" aria-label="E-Mail Address">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Submit</button>
+            </span>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <label for="exampleFormControlTextarea1">Message:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</div>
+@*<h1>@ViewBag.paintingTitle</h1>
 <h2>Date: @ViewBag.date</h2>
 
 <h5>Location:</h5>
-<div>@ViewBag.location</div>
+<div>@ViewBag.location</div>*@
     
